@@ -10,9 +10,13 @@ There are some of solutions to store secrets and inject them as env var during r
 
 I will not provide binaries in the reposiories release section. Bare in mind, this tool manages your secrets, you will not want precompiled binaries to see them. Compile it yourself or use tools like [gobinaries.com](https://gobinaries.com/) which will download the source code and compile it on the fly (if you trust them).  
 
+It's recommended to use `go install`. This will download and compile the program: 
+
 ```sh
 go install github.com/janstuemmel/env-vault
 ```
+
+If you trust services like gobinaries, type: 
 
 ```sh
 curl -sf https://gobinaries.com/janstuemmel/env-vault | sh
